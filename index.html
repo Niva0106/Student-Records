@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Record Manager</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Student Record Manager</h1>
+    </header>
+    <main>
+        <input type="text" id="search-input" placeholder="Search students by name">
+        <select id="course-filter">
+            <option value="">All Courses</option>
+            <option value="Computer Science">Computer Science</option>
+            <option value="Electronics">Electronics</option>
+        </select>
+        <input type="number" id="marks-filter" placeholder="Minimum marks">
+        <select id="sort-by">
+            <option value="">Default Order</option>
+            <option value="name">Sort by Name</option>
+            <option value="marks-asc">Marks: Low to High</option>
+            <option value="marks-desc">Marks: High to Low</option>
+        </select>
+        <table>
+            <thead>
+                <tr>
+                    <th>Name/μid</th>
+                    <th>Course</th>
+                    <th>Marks</th>
+                </tr>
+            </thead>
+            <tbody id="student-list">
+                
+            </tbody>
+        </table>
+        <section id="student-stats">
+            <p>Total Students: <span id="total-students">0</span></p>
+            <p>Average Marks: <span id="average-marks">0</span></p>
+            <p>Topper: <span id="topper">None</span></p>
+        </section>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>

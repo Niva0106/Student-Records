@@ -1,0 +1,126 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 30px;
+    font-family: Arial, sans-serif;
+    background-color: #f7f8fc;
+    color: #26345c;
+}
+
+header {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+h1 {
+    color: #344777;
+    margin-bottom: 10px;
+}
+
+input,
+select {
+    padding: 12px 14px;
+    font-size: 15px;
+    font-family: inherit;
+    color: #26345c;
+    background-color: #ffffff;
+    border: 1px solid #dce2f0;
+    border-radius: 10px;
+    outline: none;
+    transition: border-color 0.2s, box-shadow 0.2s;
+}
+
+input:focus,
+select:focus {
+    border-color: #8299e8;
+    box-shadow: 0 0 0 3px rgba(130, 153, 232, 0.15);
+}
+
+input::placeholder {
+    color: #929bb2;
+}
+
+input,
+select {
+    max-width: 100%;
+}
+
+main {
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+#search-input {
+    width: 100%;
+    margin-bottom: 15px;
+}
+
+#course-filter,
+#marks-filter,
+#sort-by {
+    margin: 0 8px 15px 0;
+}
+
+#student-stats {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 18px;
+    margin: 20px 0 30px;
+}
+
+#student-stats p {
+    margin: 0;
+    padding: 22px;
+    background-color: #ffffff;
+    border: 1px solid #e7eaf4;
+    border-radius: 14px;
+    box-shadow: 0 4px 14px rgba(45, 60, 100, 0.04);
+    line-height: 1.7;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    background-color: #ffffff;
+    border-radius: 14px;
+    overflow: hidden;
+    box-shadow: 0 4px 18px rgba(45, 60, 100, 0.05);
+}
+
+thead {
+    background-color: #edf0fc;
+}
+
+th,
+td {
+    padding: 16px 20px;
+    text-align: left;
+    border-bottom: 1px solid #edf0f5;
+}
+
+th {
+    color: #52628b;
+    font-size: 13px;
+    font-weight: 600;
+    letter-spacing: 0.4px;
+}
+
+td {
+    color: #45516e;
+    font-size: 14px;
+}
+
+tbody tr {
+    transition: background-color 0.2s;
+}
+
+tbody tr:hover {
+    background-color: #f7f8fe;
+}
+
+tbody tr:last-child td {
+    border-bottom: none;
+}
